@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return {
             product:'Shoes'
             ,image:'./assets/images/socks_green.jpg'
-            ,inStock:true
+            ,inStock:false
             ,P_name: 'https://www.camt.cmu.ac.th/index.php/th/'
         }
     }
