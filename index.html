@@ -22,6 +22,8 @@
                     <h1>{{product}}</h1>
                     <p v-if="inventory <= 10 && inventory > 0">In Stock</p>
                     <p v-else>Out of Stock</p>
+                    <p v-if="onSale <= inventory && onSale > 0">Onsale</p>
+                    <p v-else>Not onsale</p>
                 </div>
             </div>
         </div>
