@@ -23,7 +23,7 @@
                     <h1>{{ product }}</h1> 
 
                     <h3>Status</h3>
-                    <p v-if="inventory <= 10 && inventory > 0">In Stock</p>
+                    <p v-if="inStock">In Stock</p>
                     <p v-else>Out of Stock</p>
                     
 
@@ -41,7 +41,7 @@
                     </ul>
 
                     <button class=" button " @click="addToCart">Add to Cart</button>
-
+                    <button class=" button " @click="updateStatus">Chang Status</button>
                     <h3>Size</h3>
                     <span v-for="allsize in allsizes" :key="allsize.id">{{ allsize.size }}&nbsp;</span>
 
