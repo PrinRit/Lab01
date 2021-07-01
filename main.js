@@ -9,18 +9,20 @@ const app = Vue.createApp({
             ,variants:[
                 {id: 2234, color: 'green'},
                 {id: 2235, color: 'blue'}
-            ], cart: 0
-            ,methods:{
-                addToCart(){
-                    this.cart += 1
-                }
-            }
+            ]
+            ,cart: 0
+            
             ,allsizes:[
                 {id: 1234, size: 'S'},
                 {id: 1234, size: 'M'},
                 {id: 1234, size: 'L'}
             ]
             ,onSale: 9
+        }
+    }
+    ,methods:{
+        addToCart() {
+            this.cart+=1
         }
     }
 })
