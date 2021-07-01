@@ -10,6 +10,11 @@ const app = Vue.createApp({
                 {id: 2234, color: 'green'},
                 {id: 2235, color: 'blue'}
             ]
+            ,allsizes:[
+                {id: 1234, size: 'S'},
+                {id: 1234, size: 'M'},
+                {id: 1234, size: 'L'}
+            ]
             ,onSale: 9
         }
     }
